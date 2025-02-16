@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     
     const completion = await openai.chat.completions.create({
       messages: [{ role: "system", content: systemPrompt }, ...messages],
-      model: "openai/o3-mini-high",
+      model: "openai/gpt-4o-2024-11-20",
       stream: true
     });
    
